@@ -41,7 +41,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`fname`, `lname`, `username`, `email`, `passwd`) VALUES
-('test ', 'test', 'test', 'rutvik.rp2901@gmail.com', 'test');
+('test ', 'test', 'admin', 'rutvik.rp2901@gmail.com', 'root1234');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
