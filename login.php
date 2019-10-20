@@ -31,7 +31,7 @@
             transition: none !important;
         }
 
-        .container{
+        .container {
             margin: 0;
             padding: 0;
             border: 0;
@@ -79,7 +79,7 @@
                 <div class="inner">
 
                     <!-- Logo -->
-                    <a href="index.html" class="logo">
+                    <a href="index.php" class="logo">
                         <span class="symbol"><img src="images/bookslogo.svg" alt="" /></span><span class="title">What
                             the
                             Book?</span>
@@ -94,6 +94,13 @@
 
                 </div>
             </header>
+            <!-- Menu -->
+            <nav id="menu">
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                </ul>
+            </nav>
             <div id="main">
                 <h1>Login Page!</h1>
                 <hr>
@@ -115,6 +122,13 @@
             </div>
         </div>
     </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
@@ -142,13 +156,19 @@
       // If result matched $myusername and $mypassword, table row must be 1 row
 		
       if($count == 1) {
+        session_start();
+        $_SESSION['id'] = 1;
+        $_SESSION["name"] = $row['fname'];
+
          //session_register("myusername");
          //$_SESSION['login_user'] = $myusername;
-         header('Location: index.html');
-         echo "<script>alert('Login Successful! Welcome,". $row['fname'].".');</script>";
+        header('Location: index.php');
+        //echo "<script>alert('Login Successful! Welcome,". $row['fname'].".');</script>";
       }else {
         echo "<script>alert('Invalid username or password!');</script>";
          $error = "Your Login Name or Password is invalid";
       }
+      if(isset($_SESSION["id"])) {
+        header("Location:index.php");}
    }
 ?>

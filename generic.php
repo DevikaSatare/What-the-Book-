@@ -1,4 +1,9 @@
-<!DOCTYPE HTML>
+<?php
+session_start();
+if($_SESSION['id'] != 1){
+    header("Location: login.php");
+}
+?>
 
 <head>
     <title>Category</title>
@@ -9,11 +14,11 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <style>
+    <!--style>
         header {
             padding: 2.75em 4em 1em 2em !important;
         }
-    </style>
+    </style-->
 </head>
 
 <body class="is-preload">
@@ -25,9 +30,9 @@
             <div class="inner">
 
                 <!-- Logo -->
-                <a href="index.html" class="logo">
+                <a href="index.php" class="logo">
                     <span class="symbol"><img src="images/bookslogo.svg" alt="" /></span><span class="title">What the
-						Book?</span>
+                        Book?</span>
                 </a>
 
                 <!-- Nav -->
@@ -44,85 +49,90 @@
         <nav id="menu">
             <h2>Menu</h2>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="generic.html">Categories</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="generic.php">Categories</a></li>
+                <?php if($_SESSION['id'] != 1){?>
+                <li><a href="login.php">Login</a></li>
+                <?php }else{?>
+                <li><a href="logout.php">Logout</a></li>
+                <?php } ?>
             </ul>
         </nav>
-
         <!-- Main -->
         <div id="main">
             <div class="inner">
                 <h1>Categories</h1>
-                <p>Get all the categories of books needed for you.</p>
+                <p>Welcome, <?php echo $_SESSION['name']; ?> !
+                    Get all the categories of books needed for you.</p>
                 <hr>
                 <section class="tiles">
-                        <article class="style1">
-                            <span class="image">
-                                <img src="images/poetry.jpg" alt="Poetry" />
-                            </span>
-                            <a href="generic.html">
-                                <h2>Poetry</h2>
-                                <div class="content">
-                                    <p>Books</p>
-                                </div>
-                            </a>
-                        </article>
-                        <article class="style2">
-                            <span class="image">
-                                <img src="images/action.jpg" alt="Action & Adventure" />
-                            </span>
-                            <a href="generic.html">
-                                <h2>Action & Adventure</h2>
-                                <div class="content">
-                                    <p>Books</p>
-                                </div>
-                            </a>
-                        </article>
-                        <article class="style3">
-                            <span class="image">
-                                <img src="images/romance.jpg" alt="Romantic" />
-                            </span>
-                            <a href="generic.html">
-                                <h2>Romance</h2>
-                                <div class="content">
-                                    <p>Books</p>
-                                </div>
-                            </a>
-                        </article>
-                        <article class="style4">
-                            <span class="image">
-                                <img src="images/religion.jpg" alt="Religious" />
-                            </span>
-                            <a href="generic.html">
-                                <h2>Religious</h2>
-                                <div class="content">
-                                    <p>Books</p>
-                                </div>
-                            </a>
-                        </article>
-                        <article class="style5">
-                            <span class="image">
-                                <img src="images/autobio.jpg" alt="Autobiography" />
-                            </span>
-                            <a href="generic.html">
-                                <h2>Autobiography</h2>
-                                <div class="content">
-                                    <p>Books</p>
-                                </div>
-                            </a>
-                        </article>
-                        <article class="style6">
-                            <span class="image">
-                                <img src="images/fiction.jpeg" alt="" />
-                            </span>
-                            <a href="generic.html">
-                                <h2>Fiction</h2>
-                                <div class="content">
-                                    <p>Books</p>
-                                </div>
-                            </a>
-                        </article>
-                    </section>
+                    <article class="style1">
+                        <span class="image">
+                            <img src="images/poetry.jpg" alt="Poetry" />
+                        </span>
+                        <a href="generic.html">
+                            <h2>Poetry</h2>
+                            <div class="content">
+                                <p>Books</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="style2">
+                        <span class="image">
+                            <img src="images/action.jpg" alt="Action & Adventure" />
+                        </span>
+                        <a href="generic.html">
+                            <h2>Action & Adventure</h2>
+                            <div class="content">
+                                <p>Books</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="style3">
+                        <span class="image">
+                            <img src="images/romance.jpg" alt="Romantic" />
+                        </span>
+                        <a href="generic.html">
+                            <h2>Romance</h2>
+                            <div class="content">
+                                <p>Books</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="style4">
+                        <span class="image">
+                            <img src="images/religion.jpg" alt="Religious" />
+                        </span>
+                        <a href="generic.html">
+                            <h2>Religious</h2>
+                            <div class="content">
+                                <p>Books</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="style5">
+                        <span class="image">
+                            <img src="images/autobio.jpg" alt="Autobiography" />
+                        </span>
+                        <a href="generic.html">
+                            <h2>Autobiography</h2>
+                            <div class="content">
+                                <p>Books</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="style6">
+                        <span class="image">
+                            <img src="images/fiction.jpeg" alt="" />
+                        </span>
+                        <a href="generic.html">
+                            <h2>Fiction</h2>
+                            <div class="content">
+                                <p>Books</p>
+                            </div>
+                        </a>
+                    </article>
+                </section>
             </div>
         </div>
 
@@ -164,13 +174,13 @@
                 </section>
                 <ul class="copyright">
                     <li>&copy; Untitled. All rights reserved</li>
-                    <li>Design: <a href="index.html">What the Book?</a></li>
+                    <li>Design: <a href="index.php">What the Book?</a></li>
                 </ul>
             </div>
         </footer>
 
     </div>
-    !-- Scripts -->
+    <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>

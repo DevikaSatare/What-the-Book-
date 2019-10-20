@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Register</title>
-    <link rel="stylesheet" href="assets/css/main.css" /> 
+    <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <style>
@@ -63,7 +63,7 @@
                 <div class="inner">
 
                     <!-- Logo -->
-                    <a href="index.html" class="logo">
+                    <a href="index.php" class="logo">
                         <span class="symbol"><img src="images/bookslogo.svg" alt="" /></span><span class="title">What
                             the
                             Book?</span>
@@ -78,6 +78,13 @@
 
                 </div>
             </header>
+            <!-- Menu -->
+            <nav id="menu">
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                </ul>
+            </nav>
             <div id="main">
                 <h1>Registration Form</h1>
                 <p>Enter your crendentails to register with the website.</p>
@@ -112,6 +119,12 @@
                 </form>
             </div>
         </div>
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
 </body>
 
 </html>

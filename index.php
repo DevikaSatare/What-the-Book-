@@ -1,4 +1,9 @@
-<!DOCTYPE HTML>
+<?php
+session_start();
+if(!isset($_SESSION['id'])) {
+    $_SESSION['name'] = 'none';
+  }  
+?>
 
 <head>
     <title>What the Book?</title>
@@ -8,7 +13,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 
 <body class="is-preload">
@@ -20,9 +25,9 @@
             <div class="inner">
 
                 <!-- Logo -->
-                <a href="index.html" class="logo">
+                <a href="index.php" class="logo">
                     <span class="symbol"><img src="images/bookslogo.svg" alt="" /></span><span class="title">What the
-						Book?</span>
+                        Book?</span>
                 </a>
 
                 <!-- Nav -->
@@ -39,8 +44,13 @@
         <nav id="menu">
             <h2>Menu</h2>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="generic.html">Categories</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="generic.php">Categories</a></li>
+                <?php if($_SESSION['name'] == 'none'){?>
+                <li><a href="login.php">Login</a></li>
+                <?php }else{?>
+                <li><a href="logout.php">Logout</a></li>
+                <?php } ?>
             </ul>
         </nav>
 
@@ -48,8 +58,13 @@
         <div id="main">
             <div class="inner">
                 <header>
-                    <h1>Everything you will need from conception to reception.<br /> Books to change our world.</h1>
-                    <p>A great eye for good books. A great place to be stranded. A world of books for young and old. All for you!</p>
+                    <h1>
+                        <?php if($_SESSION['name'] != 'none'){ 
+                    echo "Hi ".$_SESSION['name']." ,";
+                     } ?>
+                        Everything you will need from conception to reception.<br /> Books to change our world.</h1>
+                    <p>A great eye for good books. A great place to be stranded. A world of books for young and old. All
+                        for you!</p>
                 </header>
             </div>
         </div>
@@ -96,7 +111,7 @@
                             document.write(new Date().getFullYear())
                         </script>
                         , What the Book? | All rights reserved</li>
-                    <li>Design: <a href="index.html">What the Book?</a></li>
+                    <li>Design: <a href="index.php">What the Book?</a></li>
                 </ul>
             </div>
         </footer>
