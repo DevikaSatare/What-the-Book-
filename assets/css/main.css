@@ -2117,6 +2117,8 @@ input[type="radio"]+label:before {
 .image img {
     border-radius: 4px;
     display: block;
+    height : 400;
+    width : 400;
 }
 
 .image.left,
