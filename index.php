@@ -64,7 +64,48 @@ if(!isset($_SESSION['id'])) {
                      } ?>
                         Everything you will need from conception to reception.<br /> Books to change our world.</h1>
                     <p>A great eye for good books. A great place to be stranded. A world of books for young and old. All
-                        for you!</p>
+                        for you!</p><br><br>
+                    <div id="main">
+						<div class="inner">
+                            <h3>ABOUT US</h3>
+
+
+                        <div class="slideshow-container">
+
+                            <div class="mySlides fade">
+                              <div class="numbertext">1 / 3</div>
+                              <img src="images/ssimg1.jpg" style="width:100%">
+                              <div class="text">Caption Text</div>
+                            </div>
+
+                            <div class="mySlides fade">
+                              <div class="numbertext">2 / 3</div>
+                              <img src="images/ssimg2.jpg" style="width:100%">
+                              <div class="text">Caption Two</div>
+                            </div>
+
+                            <div class="mySlides fade">
+                              <div class="numbertext">3 / 3</div>
+                              <img src="images/ssimg3.jpg" style="width:100%">
+                              <div class="text">Caption Three</div>
+                            </div>
+
+                        </div>
+                        <br>
+
+                        <div style="text-align:center">
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                        </div>
+
+                        <br>
+                        <br>
+							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
+							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+						</div>
+					</div>
                 </header>
             </div>
         </div>
@@ -124,6 +165,7 @@ if(!isset($_SESSION['id'])) {
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/slideshow.js"></script>
 
 
 </body>
