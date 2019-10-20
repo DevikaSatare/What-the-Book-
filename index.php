@@ -101,10 +101,13 @@ if(!isset($_SESSION['id'])) {
 
                         <br>
                         <br>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-						</div>
+							<p>When was the last time you read a book, or a substantial magazine article? Do your daily reading habits center around tweets, Facebook updates, or the directions on your instant oatmeal packet?</p>
+							<p>If you’re one of countless people who don’t make a habit of reading regularly, you might be missing out.</p>
+							<p>No matter how much stress you have at work, in your personal relationships, or countless other issues faced in daily life, it all just slips away when you lose yourself in a great story. A well-written novel can transport you to other realms, while an engaging article will distract you and keep you in the present moment, letting tensions drain away and allowing you to relax.</p>
+                            <p>Everything you read fills your head with new bits of information, and you never know when it might come in handy. The more knowledge you have, the better-equipped you are to tackle any challenge you’ll ever face.</p>
+                            <p>Additionally, here’s a bit of food for thought: should you ever find yourself in dire circumstances, remember that although you might lose everything else—your job, your possessions, your money, even your health—knowledge can never be taken from you.</p>
+                            <p>No matter what sort of challenges you're facing, you'll probably need loads of motivation. So don't miss this valuable guide to give you a motivation boost!</p>
+                        </div>
 					</div>
                 </header>
             </div>
