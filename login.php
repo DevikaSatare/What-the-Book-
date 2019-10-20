@@ -132,7 +132,7 @@
       $myusername = mysqli_real_escape_string($db,$_POST['username']);
       $mypassword = mysqli_real_escape_string($db,$_POST['passwd']); 
       
-      $sql = "SELECT fname FROM users WHERE username = '$myusername' and passwd = '$mypassword'";
+      $sql = "SELECT * FROM users WHERE username = '$myusername' and passwd = '$mypassword'";
       $result = mysqli_query($db,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
       //$active = $row['active'];
@@ -144,9 +144,8 @@
       if($count == 1) {
          //session_register("myusername");
          //$_SESSION['login_user'] = $myusername;
-         echo "<script>alert('Login Successful!');</script>";
          header('Location: index.html');
-         exit;
+         echo "<script>alert('Login Successful! Welcome,". $row['fname'].".');</script>";
       }else {
         echo "<script>alert('Invalid username or password!');</script>";
          $error = "Your Login Name or Password is invalid";
