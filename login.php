@@ -70,7 +70,7 @@
                 <form action="" method="POST">
 
                     <label for="username"><b>Username : </b></label>
-                    <input name="username" type="text" placeholder="Enter email-id" required><br><br>
+                    <input name="username" type="text" placeholder="Enter username" required><br><br>
 
                     <label for="passwd"><b>Password : </b></label>
                     <input name="passwd" type="password" placeholder="Enter password" required><br>
