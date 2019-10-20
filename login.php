@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css" />
     <title>Document</title>
     <style>
         input {
@@ -26,29 +27,62 @@
             margin-right: 5%;
 
         }
+
+        header {
+            padding: 2.75em 4em 1em 2em !important;
+        }
+
+        #main {
+            padding: 0 8em 0 8em;
+        }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Login Page!</h1>
-        <p>Enter your cerdentials to login.</p>
-        <hr>
-        <form action="" method="POST">
-            <br>
-            <label for="username"><b>Username : </b></label>
-            <input name="username" type="text" placeholder="Enter email-id" required><br><br>
+    <div class="is-preload">
+        <!--Wrapper-->
+        <div id="wrapper">
+            <!-- Header -->
+            <header id="header">
+                <div class="inner">
 
-            <label for="passwd"><b>Password : </b></label>
-            <input name="passwd" type="password" placeholder="Enter password" required><br>
+                    <!-- Logo -->
+                    <a href="index.html" class="logo">
+                        <span class="symbol"><img src="images/bookslogo.svg" alt="" /></span><span class="title">What
+                            the
+                            Book?</span>
+                    </a>
 
-            <br>
-            <input name="submit" id="submit" type="submit">
-            <input name="reset" id="reset" type="reset">
-        </form>
-        <p>Not a member? <a href="register.php">Sign up Now!</a></p>
+                    <!-- Nav -->
+                    <nav>
+                        <ul>
+                            <li><a href="#menu">Menu</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </header>
+            <div id="main">
+                <h1>Login Page!</h1>
+                <hr>
+                <form action="" method="POST">
+
+                    <label for="username"><b>Username : </b></label>
+                    <input name="username" type="text" placeholder="Enter email-id" required><br><br>
+
+                    <label for="passwd"><b>Password : </b></label>
+                    <input name="passwd" type="password" placeholder="Enter password" required><br>
+
+                    <br>
+                    <input name="submit" id="submit" type="submit">
+                    <input name="reset" id="reset" type="reset">
+                    <br><br>
+                    <p>Not a member? <a href="register.php">Sign up Now!</a></p>
+                </form>
+
+            </div>
+        </div>
     </div>
-
 </body>
 
 </html>
