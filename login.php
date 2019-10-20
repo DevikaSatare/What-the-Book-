@@ -115,7 +115,10 @@
          //session_register("myusername");
          //$_SESSION['login_user'] = $myusername;
          echo "<script>alert('Login Successful!');</script>";
+         header('Location: index.html');
+         exit;
       }else {
+        echo "<script>alert('Invalid username or password!');</script>";
          $error = "Your Login Name or Password is invalid";
       }
    }
