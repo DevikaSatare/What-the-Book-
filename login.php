@@ -7,6 +7,36 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+        html {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #ffffff;
+        }
+
+        body .container *,
+        body .container *:before,
+        body .container *:after {
+            -moz-animation: none !important;
+            -webkit-animation: none !important;
+            -ms-animation: none !important;
+            animation: none !important;
+            -moz-transition: none !important;
+            -webkit-transition: none !important;
+            -ms-transition: none !important;
+            transition: none !important;
+        }
+
+        .container{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
         input {
             width: 100%;
         }
@@ -79,6 +109,7 @@
          //session_register("myusername");
          //$_SESSION['login_user'] = $myusername;
          echo "<script>alert('Login Successful!');</script>";
+         header('Location: index.html');
       }else {
          $error = "Your Login Name or Password is invalid";
       }
